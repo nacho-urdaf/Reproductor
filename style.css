@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+section{
+    color: rgb(226, 226, 226);
+    background-color: #424242;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section .img{
+    width: 100%;
+}
+
+section .img img{
+    width:100% ;
+    border-radius: 9px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    margin-left: 20px;
+
+}
+.info .spotify{
+    font-size: 24px;
+}
+
+.info button{
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.info button i{
+    font-size: 18px;
+    transition: all .3s;
+}
+
+
+.info .onplay h1{
+    width: 200px;
+    
+    white-space:nowrap;
+    overflow:hidden;
+    
+}
+
+.info p{
+    color: #cccccc;
+    font-size:smaller;
+}
+
+@keyframes onplay{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-150%);
+    }
+}
+
+.animation-onplay{
+    animation-name: onplay;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
